@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shopping List (using Room)</string>
+    <string name="placeholder">Sample text</string>
+    <string name="btn_add_item_desc">Button for adding item to the list</string>
+    <string name="btn_change_item_desc">Button for changing the item</string>
+
+    <string name="clear_list">Очистить список</string>
+    <string name="add_item">Добавить</string>
+
+    --- Категории ---
+    <string name="ctg_meat">Мясо, птица, колбаса</string>
+    <string name="ctg_fruit_and_veg">Фрукты, овощи</string>
+    <string name="ctg_sweet">Кондитерские изделия</string>
+    <string name="ctg_tea_coffee_cocoa">Чай, кофе, какао</string>
+    <string name="ctg_groceries">Бакалея</string>
+    <string name="ctg_frozen">Замороженная продукция</string>
+    <string name="ctg_dairy">Молоко, сыр, яйцо</string>
+    <string name="ctg_sea">Рыба и морепродукты</string>
+    <string name="ctg_bread">Хлеб и хлебобулочные изделия</string>
+    <string name="ctg_drinks">Напитки</string>
+    <string name="ctg_chemistry">Бытовая химия</string>
+</resources>

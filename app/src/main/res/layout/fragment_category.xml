@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="categoryFragment"
+            type="com.levox.shopping.fragments.CategoryFragment" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.CategoryFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_meat"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/ctg_meat"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_meat)}'/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_fruit_and_veg"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_meat"
+                    android:text="@string/ctg_fruit_and_veg"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_fruit_and_veg)}'/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sweet"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_fruit_and_veg"
+                    android:text="@string/ctg_sweet"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_sweet)}'/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_tea"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_sweet"
+                    android:text="@string/ctg_tea_coffee_cocoa"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_tea_coffee_cocoa)}'/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_groceries"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_tea"
+                    android:text="@string/ctg_groceries"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_groceries)}'/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_frozen"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_groceries"
+                    android:text="@string/ctg_frozen"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_frozen)}'/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_dairy"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_frozen"
+                    android:text="@string/ctg_dairy"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_dairy)}'/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sea"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_dairy"
+                    android:text="@string/ctg_sea"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_sea)}'/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_bread"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_sea"
+                    android:text="@string/ctg_bread"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_bread)}'/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_drinks"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_bread"
+                    android:text="@string/ctg_drinks"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_drinks)}'/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_chemistry"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_drinks"
+                    android:text="@string/ctg_chemistry"
+                    android:textSize="20sp"
+                    android:onClick='@{() -> categoryFragment.goToSelectedCategory(@string/ctg_chemistry)}'/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+</FrameLayout>
+</layout>
